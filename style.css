@@ -1,0 +1,80 @@
+/* --- 1. BRANDING & VARIABLES --- */
+:root {
+    --bg-cream: #fff5db;
+    --accent: #2cc295;
+    --secondary-forest: #03624c;
+    --secondary-deep: #042222;
+    --text-ink: #021a1a;
+    --text-light: #4b5563;
+    --white: #ffffff;
+    --font-heading: 'Roboto Slab', serif;
+    --font-body: 'Inter', sans-serif;
+    --space-md: 24px;
+    --space-lg: 32px;
+    --radius-pill: 30px;
+    --shadow-soft: 0 10px 40px -10px rgba(3, 98, 76, 0.08);
+    --shadow-hover: 0 20px 40px -10px rgba(3, 98, 76, 0.15);
+}
+
+/* --- 2. NAVIGATION BAR --- */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--bg-cream);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-soft);
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-md) 0;
+}
+
+/* --- 3. LOGO STYLING --- */
+.logo {
+    font-family: var(--font-heading);
+    font-size: 28px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.logo-clean {
+    color: var(--text-ink);
+}
+
+.logo-sl {
+    color: var(--accent);
+}
+
+/* --- 4. LINKS & BUTTONS --- */
+.nav-links {
+    display: flex;
+    gap: var(--space-lg);
+    align-items: center;
+}
+
+.nav-link {
+    color: var(--secondary-forest);
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--accent);
+}
+
+.btn-nav {
+    background: var(--accent);
+    color: var(--bg-cream);
+    border-radius: var(--radius-pill);
+    padding: 16px 24px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
