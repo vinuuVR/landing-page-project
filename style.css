@@ -293,15 +293,116 @@
     font-weight: 600;
 }
 
-/* Footer */
+/* Footer V2 Styling */
 .footer {
-    background: var(--secondary-deep);
-    padding: 40px 0;
+    background: var(--secondary-deep); /* Dark Green/Blue background */
+    padding: 60px 0 20px; /* More padding on top */
     color: var(--bg-cream);
+    font-size: 15px;
 }
 
-.footer-content {
-    text-align: center;
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 3-Column Grid Layout */
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+/* Column Styling */
+.footer-col h4 {
+    color: var(--accent); /* Uses your accent color */
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.footer-desc {
+    opacity: 0.8;
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
+/* Links List */
+.footer-nav, .contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav li, .contact-list li {
+    margin-bottom: 12px;
+}
+
+.footer-nav a {
+    color: var(--bg-cream);
+    text-decoration: none;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: var(--accent);
+    opacity: 1;
+    padding-left: 5px; /* Subtle slide effect */
+}
+
+/* Icons */
+.contact-list i {
+    color: var(--accent);
+    margin-right: 10px;
+    width: 20px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--bg-cream);
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+ 
+.social-icons a:hover {
+    background: var(--accent);
+    color: var(--secondary-deep);
+}
+
+/* Bottom Bar */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.legal-links a {
+    color: var(--bg-cream);
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.legal-links a:hover {
+    color: var(--accent);
 }
 
 .footer-logo {
@@ -319,30 +420,13 @@
     color: var(--accent);
 }
 
-.footer-links {
-    margin-bottom: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
-    flex-wrap: wrap;
-}
-
-.footer-links a {
-    color: var(--bg-cream);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.footer-links a:hover {
-    color: var(--accent);
-}
-
-.separator {
-    opacity: 0.5;
-}
-
-.footer-copyright {
-    font-size: 14px;
-    opacity: 0.7;
+/* Mobile Tweak */
+@media (max-width: 768px) {
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+    .legal-links a {
+        margin: 0 10px;
+    }
 }
