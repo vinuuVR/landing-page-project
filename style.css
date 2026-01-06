@@ -314,6 +314,9 @@
     background: transparent;
     text-align: center;
     padding: var(--space-md);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .avatar {
@@ -335,6 +338,7 @@
 .team-card h4 {
     margin-bottom: 4px;
     font-size: 1.2rem;
+    line-height: 1.3;
 }
 
 .team-card span {
@@ -342,6 +346,13 @@
     font-size: 0.9rem;
     font-weight: 600;
 }
+
+.team .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
 
 /* Footer V2 Styling */
 .footer {
