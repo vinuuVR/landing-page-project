@@ -126,6 +126,10 @@ ul {
     box-shadow: var(--shadow-soft);
 }
 
+.navbar.scrolled {
+    box-shadow: var(--shadow-primary);
+}
+
 .nav-content {
     display: flex;
     align-items: center;
@@ -165,23 +169,82 @@ ul {
 
 .nav-link {
     color: var(--secondary-forest);
+    text-decoration: none;
     font-weight: 500;
     font-size: 16px;
     transition: color 0.3s ease;
+    position: relative;
 }
 
 .nav-link:hover {
     color: var(--accent);
 }
 
+/* Mobile Menu Toggle */
+.mobile-menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.mobile-menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background: var(--secondary-forest);
+    transition: all 0.3s ease;
+}
+
+.btn {
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 16px;
+    padding: var(--space-sm) var(--space-md);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-hero {
+    background: var(--accent);
+    color: var(--bg-cream);
+    border-radius: var(--radius-pill);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-xs);
+}
+
+.btn-hero:hover {
+    color: var(--text-ink);
+    background: var(--hover);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+}
+
+/* Properties for buttons in the whole web page */
+.btn-large {
+    padding: var(--space-sm) var(--space-lg);
+    font-size: 18px;
+}
+
 .btn-nav {
     background: var(--accent);
     color: var(--bg-cream);
     border-radius: var(--radius-pill);
-    padding: 16px 24px;
-    font-weight: 600;
-    border: none;
-    cursor: pointer;
+    padding: var(--space-sm) var(--space-md);
+}
+
+.btn-nav:hover {
+    background: var(--hover);
+    color: var(--text-ink);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
 }
 
 /* --- HERO SECTION --- */
