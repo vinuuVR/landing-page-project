@@ -1,5 +1,9 @@
+/* Fonts Import from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Slab:wght@100..900&display=swap');
+
 /* --- 1. BRANDING & VARIABLES --- */
 :root {
+    /* Color Palette */
     --bg-cream: #fff5db;
     --accent: #2cc295;
     --secondary-forest: #03624c;
@@ -7,13 +11,25 @@
     --text-ink: #021a1a;
     --text-light: #4b5563;
     --white: #ffffff;
+
+    /* Spacing & Typography */
     --font-heading: 'Roboto Slab', serif;
     --font-body: 'Inter', sans-serif;
+    --space-xs: 8px;
+    --space-sm: 16px;
     --space-md: 24px;
     --space-lg: 32px;
+    --space-xl: 64px;
+
+    /* Border Radius Sizes */
+    --radius-sm: 8px;
+    --radius-card: 16px;
     --radius-pill: 30px;
+
+    /* Border Radius */
     --shadow-soft: 0 10px 40px -10px rgba(3, 98, 76, 0.08);
     --shadow-hover: 0 20px 40px -10px rgba(3, 98, 76, 0.15);
+    --shadow-primary: 0 8px 20px -5px rgba(44, 194, 149, 0.4);
 }
 
 /* --- 2. NAVIGATION BAR --- */
@@ -356,8 +372,10 @@
 
 /* Footer V2 Styling */
 .footer {
-    background: var(--secondary-deep); /* Dark Green/Blue background */
-    padding: 60px 0 20px; /* More padding on top */
+    background: var(--secondary-deep);
+    /* Dark Green/Blue background */
+    padding: 60px 0 20px;
+    /* More padding on top */
     color: var(--bg-cream);
     font-size: 15px;
 }
@@ -378,7 +396,8 @@
 
 /* Column Styling */
 .footer-col h4 {
-    color: var(--accent); /* Uses your accent color */
+    color: var(--accent);
+    /* Uses your accent color */
     font-size: 18px;
     margin-bottom: 20px;
     font-weight: 600;
@@ -391,12 +410,14 @@
 }
 
 /* Links List */
-.footer-nav, .contact-list {
+.footer-nav,
+.contact-list {
     list-style: none;
     padding: 0;
 }
 
-.footer-nav li, .contact-list li {
+.footer-nav li,
+.contact-list li {
     margin-bottom: 12px;
 }
 
@@ -410,7 +431,8 @@
 .footer-nav a:hover {
     color: var(--accent);
     opacity: 1;
-    padding-left: 5px; /* Subtle slide effect */
+    padding-left: 5px;
+    /* Subtle slide effect */
 }
 
 /* Icons */
@@ -438,7 +460,7 @@
     text-decoration: none;
     transition: background 0.3s ease;
 }
- 
+
 .social-icons a:hover {
     background: var(--accent);
     color: var(--secondary-deep);
@@ -487,6 +509,7 @@
         flex-direction: column;
         text-align: center;
     }
+
     .legal-links a {
         margin: 0 10px;
     }
