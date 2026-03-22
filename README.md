@@ -1,31 +1,32 @@
 # CleanSL - Smart Waste Management System
 
-CleanSL is a modern web-based platform designed to revolutionize waste management in Colombo. The project focuses on real-time tracking, AI-powered verification, and a seamless user experience to promote a cleaner environment.
+CleanSL is a modern web-based platform designed to improve waste management in Colombo. The project focuses on real-time tracking, AI-assisted verification, and a clear user experience for residents and authorities.
 
-## 🚀 Overview
+## Overview
 
-This project provides a centralized dashboard and landing page for citizens and waste management authorities to interact, track collection schedules, and manage waste disposal efficiently.
+This project provides a landing page for citizens and waste management teams to explore the product, understand how it works, and connect with the team.
 
-## ✨ Features
+## Features
 
 - **Smart Tracking:** Real-time monitoring of waste collection.
 - **AI Verification:** Ensuring proper disposal through intelligent systems.
-- **Priority Access:** Guest list registration for early adopters.
-- **Responsive Design:** Fully optimized for mobile, tablet, and desktop views.
+- **Issue Reporting:** Residents can report missed pickups and track service status.
+- **Responsive Design:** Optimized for mobile, tablet, and desktop views.
 - **SEO Optimized:** Meta tags configured for better search engine visibility and social sharing.
+- **Interactive Navigation:** Mobile menu and sticky navbar behavior are included.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
-- **Frontend:** HTML5, CSS3 (using CSS Variables for easy theming)
-- **Design:** Clean, minimalist aesthetic with a "Deep Green" and "Cream" color palette.
-- **Version Control:** Git & GitHub
+- **Frontend:** HTML5, CSS3, JavaScript
+- **Design:** Clean, minimalist aesthetic with a deep green and cream color palette
+- **Version Control:** Git and GitHub
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
-├── images/             # Brand assets and icons
-│   ├── logo.png        # Primary logo
-│   └── logo2.png       # Secondary logo variant
-├── index.html          # Main landing page
-├── style.css           # Global stylesheets
-└── README.md           # Project documentation
+|-- images/              # Brand assets and team photos
+|-- index.html           # Main landing page
+|-- style.css            # Global styles
+|-- script.js            # Navbar and mobile menu behavior
+`-- README.md            # Project documentation
+```

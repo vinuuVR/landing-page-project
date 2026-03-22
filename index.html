@@ -5,43 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" href="images/logo.png" />
+    <link rel="icon" href="images/logo.png">
     <title>CleanSL</title>
 
     <meta name="description"
         content="Smart waste management system for Colombo with real-time tracking and AI verification.">
     <meta property="og:title" content="CleanSL - Smart Waste Management for Colombo">
     <meta property="og:description"
-        content="Our private guest list is now open. Register for priority access and exclusive introductory rates.">
+        content="Track collection vehicles, verify waste pickup status, and report issues with full transparency.">
 
-    <!-- CSS Link -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- Icons: Phosphor Icons (Matches your "Rounded & Friendly" requirement) -->
     <script src="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2"></script>
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css" />
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css" />
 </head>
 
 <body>
-    <!-- Navigation Bar -->
     <nav class="navbar" id="navbar">
         <div class="container">
             <div class="nav-content">
-                <div class="logo">
+                <a href="#home" class="logo" aria-label="CleanSL home">
                     <img src="images/logo.png" alt="CleanSL Logo" class="logo-image">
                     <span class="logo-clean">Clean</span><span class="logo-sl">SL</span>
-                </div>
+                </a>
+
                 <div class="nav-links" id="navLinks">
                     <a href="#home" class="nav-link">Home</a>
                     <a href="#features" class="nav-link">Features</a>
                     <a href="#how-it-works" class="nav-link">How it Works</a>
                     <a href="#team" class="nav-link">Team</a>
                 </div>
-                <button class="btn btn-nav">Get the App</button>
-                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+
+                <a href="#get-started" class="btn btn-nav">Get Started</a>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Open navigation menu"
+                    aria-expanded="false" aria-controls="navLinks">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -50,20 +45,20 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container hero-container">
             <div class="hero-content">
                 <div class="badge">
                     <i class="ph-fill ph-sparkle"></i> Smart Waste Management
                 </div>
+
                 <h1>A Cleaner Colombo Starts Here.</h1>
                 <p>Real-time truck tracking, AI-powered waste verification, and instant accountability for residents and
                     the CMC.</p>
 
                 <div class="hero-button">
-                    <a href="#" class="btn btn-primary btn-hero">
-                        <i class="ph ph-magnifying-glass"></i> Explore CleanSL
+                    <a href="#get-started" class="btn btn-hero">
+                        <i class="ph ph-rocket-launch"></i> Get Started
                     </a>
                 </div>
 
@@ -79,6 +74,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="hero-image">
                 <div class="phone-mockup">
                     <div class="phone-screen">
@@ -95,7 +91,7 @@
                                 <p>Live Truck Tracking</p>
                             </div>
                             <div class="status-card">
-                                <span class="status-badge">✓ On Schedule</span>
+                                <span class="status-badge">On Schedule</span>
                                 <p>Collection in 15 mins</p>
                             </div>
                         </div>
@@ -105,7 +101,6 @@
         </div>
     </section>
 
-    <!-- Problem vs Solution (Features) -->
     <section id="features" class="section features">
         <div class="container">
             <div class="section-header">
@@ -114,40 +109,35 @@
             </div>
 
             <div class="grid-3">
-                <!-- Feature 1 -->
                 <div class="card">
                     <div class="icon-box">
                         <i class="ph ph-map-pin"></i>
                     </div>
                     <h3>Live Tracking</h3>
-                    <p>Never miss a collection again. See exactly where your garbage truck is in real-time using
-                        our GPS integration.</p>
+                    <p>Never miss a collection again. See exactly where your garbage truck is in real time using our GPS
+                        integration.</p>
                 </div>
 
-                <!-- Feature 2 -->
                 <div class="card">
                     <div class="icon-box">
                         <i class="ph ph-scan"></i>
                     </div>
                     <h3>AI Verification</h3>
-                    <p>Residents can snap a photo when they want to raise a complaint. Our TensorFlow AI instantly verifies if waste is sorted, ensuring
-                        fair collection.</p>
+                    <p>Residents can raise complaints with a photo, and the platform verifies whether waste was sorted
+                        correctly before a case is processed.</p>
                 </div>
 
-                <!-- Feature 3 -->
                 <div class="card">
                     <div class="icon-box">
                         <i class="ph ph-shield-check"></i>
                     </div>
                     <h3>Transparent Reports</h3>
-                    <p>File complaints directly to the CMC and track their resolution status with unique digital
-                        ticket IDs.</p>
+                    <p>File complaints directly to the CMC and follow progress through clear, trackable status updates.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- How it works section -->
     <section class="section how-it-works" id="how-it-works">
         <div class="container">
             <div class="section-header">
@@ -161,26 +151,29 @@
                 <div class="process-step">
                     <div class="step-number">1</div>
                     <div class="body-step">
-                        <h3 class="step-title">Submit & Track</h3>
+                        <h3 class="step-title">Submit and Track</h3>
                         <p class="step-text">Residents report waste collection issues or track scheduled pickups
-                            directly
-                            through the platform.</p>
+                            directly through the platform.</p>
                     </div>
                 </div>
-                <div class="process-arrow">→</div>
+
+                <div class="process-arrow" aria-hidden="true">&rarr;</div>
+
                 <div class="process-step">
                     <div class="step-number">2</div>
                     <div class="body-step">
-                        <h3 class="step-title">Verify & Process</h3>
+                        <h3 class="step-title">Verify and Process</h3>
                         <p class="step-text">The system verifies submissions, applies AI checks where applicable, and
                             assigns tasks to authorities.</p>
                     </div>
                 </div>
-                <div class="process-arrow">→</div>
+
+                <div class="process-arrow" aria-hidden="true">&rarr;</div>
+
                 <div class="process-step">
                     <div class="step-number">3</div>
                     <div class="body-step">
-                        <h3 class="step-title">Resolve & Notify</h3>
+                        <h3 class="step-title">Resolve and Notify</h3>
                         <p class="step-text">Authorities resolve the issue, update the status, and residents receive
                             confirmation notifications.</p>
                     </div>
@@ -189,7 +182,6 @@
         </div>
     </section>
 
-    <!-- Team Section -->
     <section id="team" class="section team">
         <div class="container">
             <div class="section-header">
@@ -197,7 +189,6 @@
                 <p>The minds behind CleanSL.</p>
             </div>
             <div class="grid-3">
-                <!-- Member 1 -->
                 <div class="team-card">
                     <div class="avatar">
                         <img src="images/nm.webp" alt="Nafhath Mohamed">
@@ -205,7 +196,6 @@
                     <h4>Nafhath Mohamed</h4>
                     <span>Project Lead | Mobile Dev | ML Engineer</span>
                 </div>
-                <!-- Member 2 -->
                 <div class="team-card">
                     <div class="avatar">
                         <img src="images/hp.webp" alt="Harish Prashanna">
@@ -213,7 +203,6 @@
                     <h4>Harish Prashanna</h4>
                     <span>Backend Lead</span>
                 </div>
-                <!-- Member 3 -->
                 <div class="team-card">
                     <div class="avatar">
                         <img src="images/vr.webp" alt="Vinusha Ranasinghe">
@@ -221,15 +210,13 @@
                     <h4>Vinusha Ranasinghe</h4>
                     <span>UI/UX Lead | Frontend Web Dev | Mobile Dev</span>
                 </div>
-                <!-- Member 4 -->
                 <div class="team-card">
                     <div class="avatar">
                         <img src="images/as.webp" alt="Aakif Saroos">
                     </div>
                     <h4>Aakif Saroos</h4>
-                    <span>Frontend & Web</span>
+                    <span>Frontend and Web</span>
                 </div>
-                <!-- Member 5 -->
                 <div class="team-card">
                     <div class="avatar">
                         <img src="images/ha.webp" alt="Husni Atham">
@@ -237,7 +224,6 @@
                     <h4>Husni Atham</h4>
                     <span>Data Analyst</span>
                 </div>
-                <!-- Member 6 -->
                 <div class="team-card">
                     <div class="avatar">
                         <img src="images/if.webp" alt="Ilman Fazny">
@@ -249,7 +235,63 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <section id="privacy" class="section info-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Privacy First</h2>
+                <p>CleanSL is designed to improve accountability while keeping resident reports focused and secure.</p>
+            </div>
+            <div class="info-grid">
+                <div class="card info-card">
+                    <h3>Collection Data</h3>
+                    <p>Location and schedule updates are used to show truck progress and improve pickup reliability.</p>
+                </div>
+                <div class="card info-card">
+                    <h3>Resident Reports</h3>
+                    <p>Complaint photos and issue details are reviewed only to verify service quality and resolve cases.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="get-started" class="section info-section info-section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get Started</h2>
+                <p>Choose the right access point for residents, collection teams, and city authorities.</p>
+            </div>
+            <div class="get-started-grid">
+                <div class="card start-card">
+                    <div class="start-card-icon">
+                        <i class="ph ph-android-logo"></i>
+                    </div>
+                    <h3>Mobile App for Residents and Workers</h3>
+                    <p>Download the Android APK for residents and collection teams. You can host the APK directly on the
+                        site or replace the link with a Google Drive download later.</p>
+                    <div class="start-card-actions">
+                        <a href="assets/CleanSL.apk" class="btn btn-hero" download>Download APK</a>
+                        <a href="https://drive.google.com/your-file-link" class="btn btn-secondary">Google Drive Link</a>
+                    </div>
+                    <p class="start-card-note">Placeholder APK path: <code>assets/CleanSL.apk</code></p>
+                </div>
+
+                <div class="card start-card">
+                    <div class="start-card-icon">
+                        <i class="ph ph-monitor"></i>
+                    </div>
+                    <h3>Admin Dashboard for Authorities</h3>
+                    <p>Give municipal staff a dedicated dashboard for oversight, issue resolution, and operational
+                        reporting.</p>
+                    <div class="start-card-actions">
+                        <a href="https://your-admin-dashboard-link.com" class="btn btn-hero">Open Dashboard</a>
+                    </div>
+                    <p class="start-card-note">Placeholder dashboard URL: <code>https://your-admin-dashboard-link.com</code>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-content">
@@ -258,13 +300,16 @@
                     <span class="logo-clean">Clean</span><span class="logo-sl">SL</span>
                 </div>
                 <div class="footer-links">
-                    <a href="#">Privacy Policy</a>
+                    <a href="#privacy">Privacy Policy</a>
                     <span class="separator">|</span>
-                    <a href="#">Contact Us</a>
+                    <a href="#get-started">Get Started</a>
                 </div>
-                <p class="footer-copyright">Copyright © 2026 CleanSL. All rights reserved.</p>
+                <p class="footer-copyright">Copyright &copy; 2026 CleanSL. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
+
+</html>
